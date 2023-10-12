@@ -10,7 +10,36 @@ app.get("/", (req, res)=>{
     res.render("home", {title: "Strona glowna"})
 })
 app.get("/types", (req, res)=>{
-    res.render("types", {title: "Types"})
+    res.render("types", {
+        title: "Types",
+        types: [
+            "Spaghetti",
+            "Penne",
+            "Fusilli",
+            "Farfalle",
+            "Linguine",
+            "Rigatoni",
+            "Fettuccine",
+            "Macaroni",
+            "Orzo",
+            "Lasagne",
+            "Ravioli",
+            "Tagliatelle",
+            "Pappardelle",
+            "Capellini",
+            "Gnocchi",
+            "Ziti",
+            "Conchiglie",
+            "Cannelloni",
+            "Tortellini",
+            "Orecchiette",
+            "Vermicelli",
+            "Bucatini",
+            "Strozzapreti",
+            "Campanelle",
+            "Mafalda"
+        ]
+    })
 })
 app.get("/cart", (req, res)=>{
     res.render("cart", {title: "Cart"})
@@ -18,8 +47,17 @@ app.get("/cart", (req, res)=>{
 app.get("/help", (req, res)=>{
     res.render("help", {title: "Help"})
 })
-app.get("/about", (req, res)=>{
-    res.render("about", {title: "About"})
+app.get("/images", (req, res)=>{
+    res.render("images", {
+        title: "Images",
+        images: [
+            "pasta1.jpg",
+            "pasta2.jpg",
+            "pasta3.jpg",
+            "pasta4.jpg",
+            "pasta5.jpg"
+          ]
+    })
 })
 app.get("/Contact", (req, res)=>{
     res.render("Contact", {title: "Contact"})
